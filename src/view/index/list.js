@@ -50,7 +50,6 @@ class Indexlist extends Component{
                     data:res.data
                 })
             })
-
             .catch(error=>{
                 console.log(error);
 

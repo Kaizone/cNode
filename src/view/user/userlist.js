@@ -24,7 +24,7 @@ class UserList extends Component{
                                 avatar={<Avatar src={item.author.avatar_url} />}
                                 description={
                                     <div>
-                                        <span>{item.author.loginname}</span>
+                                        <Link className="user-name" to={"/user/"+item.author.loginname}>{item.author.loginname}</Link>
                                         <Link to={"/details/"+item.id}>{item.title}</Link>
                                     </div>
                                 }
