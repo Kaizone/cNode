@@ -8,7 +8,9 @@ import {Link}from 'react-router-dom';
 import Indexlist from './list';
 class Index extends Component{
     render(){
-        console.log(this.props);
+
+        let tab = this.props.match.params.id;
+        console.log(tab)
         return (
 
             <Row className="wrap">
@@ -36,7 +38,7 @@ class Index extends Component{
                 </Col>
 
                 <Col md={18} className="index-list" >
-                    <Indexlist></Indexlist>
+                    <Indexlist tab={tab}></Indexlist>
                 </Col>
             </Row>
         )

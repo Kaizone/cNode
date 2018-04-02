@@ -45,7 +45,6 @@ class TxtTag extends Component{
     render(){
 
         let nowTab = tab[getTab(this.props.data)];
-        console.log(nowTab)
         return <Tag color={nowTab.color}>{nowTab.txt}</Tag>
     }
 }
