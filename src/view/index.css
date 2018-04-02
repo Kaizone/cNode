@@ -1,0 +1,100 @@
+#logo{
+    color: #fff;
+    text-align: center;
+
+    margin-bottom: 0;
+
+}
+.pageContainer{
+    display: flex;
+    min-height: 100vh;
+
+
+    flex-direction:column;
+}
+.wrap{
+    position: relative;
+    max-width: 980px;
+    margin:0 auto;
+}
+
+.headerDivider{
+    float:left;
+    height:44px;
+    margin:10px 0;
+
+}
+
+#nav{
+    float:left;
+    line-height: 62px;
+    background: #000;
+    border: none;
+    margin-left:30px;
+}
+#nav a{
+    color: #fff;
+}
+#nav .ant-menu-item-selected a{
+    color: #1890ff;
+}
+
+.xsNav{
+    position: absolute;
+    right:0;
+    top:0;
+    color: #fff0f6;
+    width: auto;
+}
+.main{
+    flex:1;
+}
+.main .wrap{
+    border:1px solid #ccc;
+}
+/*左侧边栏样式*/
+#index-nav{
+    border:none;
+}
+#index-nav li{
+    /*transition:.5s;*/
+    text-align: center;
+    border-right:3px solid rgba(0,0,0,0);
+}
+#index-nav li:hover,
+#index-nav .ant-menu-item-selected{
+    background: #e6f7ff;
+    border-right:#1890ff;
+}
+.index-list{
+    border-left:1px solid #ccc;
+    padding:0 10px;
+}
+.isindex-list p{
+    margin: 0;
+}
+/*切换小屏样式*/
+@media all and (max-width: 767px){
+    #index-nav{
+        display:flex;
+        border-bottom:1px solid #ccc;
+    }
+    #index-nav li{
+        flex:1;
+        margin: 0 0 -1px 0;
+        border:none;
+        border-bottom:3px solid rgba(0,0,0,0);
+    }
+    #index-nav .ant-menu-item-selected{
+        background: #e6f7ff;
+        border-bottom-color:#1890ff;
+    }
+    #index-nav li:hover{
+        border:none;
+        border-bottom:3px solid #1890ff;
+    }
+
+    .index-list{
+        border:none;
+    }
+}
