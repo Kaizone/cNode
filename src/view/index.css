@@ -17,7 +17,10 @@
     max-width: 980px;
     margin:0 auto;
 }
-
+/*设置文章图片*/
+.wrap img{
+    max-width: 100%;
+}
 .headerDivider{
     float:left;
     height:44px;
@@ -98,3 +101,27 @@
         border:none;
     }
 }
+
+.reply-list .ant-list-item-meta-avatar{
+    display:inline-block;
+}
+.ant-list-item-meta{
+    align-items: center;
+}
+
+
+/*用户详情*/
+.user-avatar{
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.user-infor{
+    text-align: center;
+    line-height: 36px;
+}
+
