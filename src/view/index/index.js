@@ -18,7 +18,6 @@ class Index extends Component{
 
                 <Col md={18} className="index-list" >
                     <Indexlist tab={tab}></Indexlist>
-                    <Pagination/>
                 </Col>
             </Row>
         )
